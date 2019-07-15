@@ -1,22 +1,27 @@
 :root {
   --black: #0d0d0d;
-  --red: #ff2d2b;
+  --red: #fff;
 }
 
 .scoreboard {
-  width: 58%;
-  margin: 10rem auto;
+  width: 100%;
+  background-image: url('./scoreboard1.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  /* margin: 10rem auto;
   background-color: #0b5402;
   color: white;
   border-radius: 0.5rem;
   margin-top: 10rem;
   padding: 5rem;
-  border: 4px solid #aaaaaa;
+  border: 4px solid #aaaaaa; */
 }
 
 .topRow {
   display: flex;
   justify-content: space-around;
+  margin: 0 -135px;
+  padding: 0px 0 0 0;
   place-items: center;
   /* height: 20rem; */
 }
@@ -28,18 +33,18 @@
   flex-direction: column;
   justify-content: space-around;
   place-items: center;
-  border: 3px solid white;
+  /* border: 3px solid white; */
   border-radius: 0.5rem;
   width: 15rem;
 }
 
-.home {
+/* .home {
   background-color: #656565;
-}
+} */
 
-.away {
+/* .away {
   background-color: #af750a;
-}
+} */
 
 .home__name,
 .away__name,
@@ -48,8 +53,10 @@
 .ballOn__title,
 .quarter__title {
   text-transform: uppercase;
-  font-size: 3rem;
-  padding: 2rem;
+  margin-top: 6rem;
+  font-size: 1.8rem;
+  padding: 1rem;
+  color: #fff;
 }
 
 .home__score,
@@ -58,7 +65,7 @@
   font-size: 7rem;
   width: 90%;
   text-align: center;
-  background-color: var(--black);
+  /* background-color: var(--black); */
   color: var(--red);
   padding: 5%;
 }
@@ -66,11 +73,12 @@
 .timer {
   font-family: "Ozone";
   font-size: 9rem;
+  color: #fff  ;
   padding: 2rem;
   text-align: center;
-  background-color: var(--black);
-  border: 2px solid white;
-  border-radius: 6px;
+  /* background-color: var(--black); */
+  /* border: 2px solid white;
+  border-radius: 6px; */
 }
 
 .bottomRow {
@@ -88,19 +96,19 @@
   flex-direction: column;
   justify-content: space-around;
   place-items: center;
-}
+} 
 
 .down__value,
 .toGo__value,
 .ballOn__value,
 .quarter__value {
   font-family: "Ozone";
-  font-size: 5rem;
+  font-size: 3rem;
   color: var(--red);
-  width: 7rem;
+  width: 6rem;
   text-align: center;
   background-color: var(--black);
-  margin-top: 1rem;
+  /*  margin-top: 4rem; */
   border-radius: 4px;
   padding: 1.6rem;
   border: 1px solid white;
